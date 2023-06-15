@@ -9,7 +9,7 @@ grid-template-areas:
   "filmes"
   "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 14vh 28vh 90vh 6vh;
+  grid-template-rows: 12vh 28vh 90vh 6vh;
   background-color: #040404;
   color: #fff;
 }
