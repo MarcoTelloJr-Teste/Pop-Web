@@ -1,18 +1,17 @@
 * {margin: 0;
 padding: 0;
-
 }
 
 body { display: grid;
 grid-template-areas: 
-  "header header header header"
-  "velozes velozes velozes velozes"
-  "filmes filmes filmes filmes"
-  "footer footer footer footer";
-grid-template-columns: 100%;
-grid-template-rows: 8.25rem 28.125rem 40.625rem 5rem;
-background-color: #040404;
-color: #fff;
+  "header"
+  "velozes"
+  "filmes"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 14vh 28vh 90vh 6vh;
+  background-color: #040404;
+  color: #fff;
 }
 
 main img {height: 15.125rem;
@@ -29,26 +28,27 @@ justify-content: space-between;
 align-items: center;
 }
 
-.logo {transform: translatey(0.6875rem);
+.logo {transform: translatey(0.3875rem);
   padding: 0;
 }
 
-.lupa {transform: translatex(-1.25rem);
+.lupa {transform: translatex(-1.35rem);
 display: flex;
 align-items: center;
 }
 
 .lupa input {margin: 0.625rem;
-padding: 0.625rem;
+padding: 0.925rem 1.5rem;
 border-radius: 1.25rem;
-border: 0.1875rem solid;}
+border: 0.1rem
+}
 
 
 .nav-list {display: flex;
 }
 
 .nav-item {border: 0.125rem solid;
-  padding: 0.625rem;
+  padding: 0.3rem;
   border-radius: 1.25rem;
   margin: 0 6.25rem;
   font-size: 1.75rem;
@@ -58,9 +58,11 @@ border: 0.1875rem solid;}
 .nav-item a {text-decoration: none;
 color: #000;}
 
-#velozes {padding: 0.625rem;
+#velozes {margin: 0.0625rem;
   grid-area: velozes;
   display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .content {margin: 0.625rem;
@@ -84,15 +86,20 @@ font-size: 1.25rem;
 padding: 0.625rem;}
 
 #footer {grid-area: footer;
-padding: 0.9375rem;
+margin: 0 auto;
 display: flex;
 justify-content: space-between;
 align-items: center;
 background-color: #940E0E;
 color: #000;
+bottom: 0;
+position: fixed;
+width: 100%;
+height: 6vh;
 }
 
 #footer img {padding: 0 0.1875rem;}
 
 .copy {font-size: 1.25rem;
 }
+
