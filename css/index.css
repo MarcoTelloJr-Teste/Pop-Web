@@ -88,7 +88,7 @@ padding: 0.625rem;}
 #footer {grid-area: footer;
 margin: 0 auto;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 background-color: #940E0E;
 color: #000;
