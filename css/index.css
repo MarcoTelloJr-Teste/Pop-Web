@@ -2,16 +2,18 @@
 padding: 0;
 }
 
-body { display: grid;
+body {background-color: #040404;
+  color: #fff;}
+
+.all { display: grid;
 grid-template-areas: 
   "header"
   "velozes"
   "filmes"
   "footer";
-  grid-template-columns: 100%;
+  grid-template-columns: 100vw;
   grid-template-rows: 12vh 28vh 90vh 6vh;
-  background-color: #040404;
-  color: #fff;
+  
 }
 
 main img {height: 15.125rem;
@@ -24,8 +26,9 @@ main img {height: 15.125rem;
 #header {grid-area: header;
 background-color: #940E0E;
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content:space-between;
+
 }
 
 .logo {transform: translatey(0.3875rem);
@@ -35,24 +38,22 @@ align-items: center;
 .lupa {transform: translatex(-1.35rem);
 display: flex;
 align-items: center;
+flex-wrap: wrap;
 }
 
 .lupa input {margin: 0.625rem;
 padding: 0.925rem 1.5rem;
 border-radius: 1.25rem;
-border: 0.1rem
-}
-
-
-.nav-list {display: flex;
+border: 0.1rem;
+flex-wrap: wrap;
 }
 
 .nav-item {border: 0.125rem solid;
   padding: 0.3rem;
-  border-radius: 1.25rem;
-  margin: 0 6.25rem;
+  border-radius: 1rem;
   font-size: 1.75rem;
   background-color: #fff;
+    
 }
 
 .nav-item a {text-decoration: none;
@@ -86,7 +87,6 @@ font-size: 1.25rem;
 padding: 0.625rem;}
 
 #footer {grid-area: footer;
-margin: 0 auto;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -103,3 +103,8 @@ height: 6vh;
 .copy {font-size: 1rem;
 }
 
+.botão-topo {padding: 1rem;}
+
+@media only screen and (max-width 900px) {
+  
+}
