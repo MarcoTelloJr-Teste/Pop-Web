@@ -1,5 +1,9 @@
-* {margin: 0;
-padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
 }
 
 body {background-color: #040404;
@@ -12,13 +16,14 @@ grid-template-areas:
   "filmes"
   "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 12vh 28vh 90vh 6vh;
+  grid-template-rows: 11vh 20vh 105vh 4vh;
 }
 
 main img {height: 15.125rem;
   width: 10.3125rem;
   border-radius: 0.9375rem;
-  padding: 0 5px;
+  padding: 0 0.3125rem;
+  margin: 0.3125rem 0;
   
 }
 
