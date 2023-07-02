@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="css/ranking.css">
   <link rel="icon" type="image/x-icon" href="assets/Favicon.ico">
   <title>Ranking | Pop Web</title>
 </head>
 
 <body>
-  
+  <div id="all">
+
   <header id="header">
     <div class="logo">
      <a href="index.html" class="nav-link"><img src="assets/Logo.png" alt="Logo popweb" class="Logopop" title="Pop Web"></a>
@@ -32,67 +33,94 @@
 
   
 <main>
-        <section>
-
-            <span><h2>1</h2></span>
-            <span><h2>Velozes e Furiosos 10</h2></span>
-            <img src="assets/Velozes2.png" alt="Velozes e Furiosos 10 Poster " width="282" height="404">
+        <section id="section1">
+            <div id="titulo" class="borda"><h1>RANKING POP WEB</h1></div>
             
+            <div id="avaliacao1" class="borda">
+            <div class="circulo">1</div>
+            <div class="titulofilme">Velozes e Furiosos 10</div>
+            </div>
+            
+            <div class="linha">
+            <span id="poster1" class="borda">
+            <img src="assets/Velozes2.png" alt="Velozes e Furiosos 10 Poster " width="282" height="404">
+            </span>
+            
+            <div id="infosfilme1" class="borda">
             <span><h3>Direção</h3></span>
-            <span><h4>Vin Diesel</h4></span>
+            <span><h4 class="nomes">Vin Diesel</h4></span>
             
             <span><h3>Roteiro</h3></span>
-            <span><h4>Justin Lin,</h4></span>
+            <span><h4 class="nomes">Justin Lin,</h4></span>
             <span><h4>Don Mazeau</h4></span>
             
             <span><h3>Título Original</h3></span>
-            <span><h4>Fast X</h4></span>
+            <span><h4 class="nomes">Fast X</h4></span>
+            </div>
 
+            <span id="notafilme1" class="borda">
             <span><h3>Nota Geral</h3></span>
             <span><h4>8,7</h4></span>
             <img src="assets/Medalha.png" alt="Medalha" width="30">
-
             <span><h3>Comentário em destaque</h3></span>
             <img src="assets/PerfilFeminino.png" alt="AnonimoFeminino" width="30">
-            <span><h4>Anônimo</h4></span>
-            <span><h4>27/05/2023</h4></span>
+            <br>
+            <span>Anônimo</span>
+            <br>
+            <span id="data">27/05/2023</span>
+            <br>
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
-            <span><h5>As irredeemably silly as it is satisfyingly self-aware, Fast X should rev the engines of longtime fans while leaving many newcomers in neutral.</h5></span>
-        
+            <span><h5 id="comentario">As irredeemably silly as it is satisfyingly self-aware, Fast X should rev the engines of longtime fans while leaving many newcomers in neutral.</h5></span>
+            </span>
+          </div>
+
         </section>
 
         <hr>
 
         <section>
 
-            <span><h2>2</h2></span>
-            <span><h2>A Pequena Sereia</h2></span>
+          <div id="avaliacao2" class="borda">
+            <div class="circulo">2</div>
+            <div class="titulofilme">A Pequena Sereia</div>
+            </div>
+
+            <div class="linha">
+            <span id="poster2" class="borda">
             <img src="assets/APequenaSereiaPoster.jpg" alt="A Pequena Sereira Poster" width="282" height="404">
+            </span>
             
+            <span id="infosfilme2" class="borda">
             <span><h3>Direção</h3></span>
-            <span><h4>Rob Marshall</h4></span>
+            <span><h4 class="nomes">Rob Marshall</h4></span>
             
             <span><h3>Roteiro</h3></span>
-            <span><h4>David Magee</h4></span>
+            <span><h4 class="nomes">David Magee</h4></span>
             
             <span><h3>Título Original</h3></span>
-            <span><h4>The Little Mermaid</h4></span>
-    
+            <span><h4 class="nomes">The Little Mermaid</h4></span>
+            </span>
+
+            <span id="notafilme2" class="borda">
             <span><h3>Nota Geral</h3></span>
             <span><h4>7,4</h4></span>
     
             <span><h3>Comentário em destaque</h3></span>
             <img src="assets/PerfilMasculino.png" alt="Perfil Masculino" width="30">
-            <span><h4>Jõao Carlos</h4></span>
-            <span><h4>27/05/2023</h4></span>
+            <br>
+            <span>Jõao Carlos</span>
+            <br>
+            <span id="data">27/05/2023</span>
+            <br>
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
-            <span><h5>With Halle Bailey making a major splash in the title role, Disney's live-action Little Mermaid ranks among the studio's most enjoyable reimaginings.</h5></span>
-            
+            <span><h5 id="comentario">With Halle Bailey making a major splash in the title role, Disney's live-action Little Mermaid ranks among the studio's most enjoyable reimaginings.</h5></span>
+            </span>
+          </div>
             </section>
 
 
@@ -113,5 +141,6 @@
         <buttom id="buttom-topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><img src="https://cdn-icons-png.flaticon.com/512/54/54817.png" sizes="(min-width: 7.5rem) 30rem, 20rem" loading="lazy"  width="40" height="40" alt="voltar ao topo" title="Voltar ao topo"> </buttom>
      </div>  
     </footer>
+  </div>
   </body>
   </html>
