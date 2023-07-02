@@ -108,3 +108,48 @@ body {
     width: 300px;
     height: 50px;
 }
+
+#avaliacao2{
+    grid-area: avaliacao2;
+}
+
+#poster2{
+    grid-area: poster2;
+}
+
+#infosfilme2{
+    grid-area: infosfilme2;
+    display: inline-block;
+    margin: 20px;
+}
+
+#notafilme2{
+    grid-area: notafilme2;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+}
+
+#footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #940E0E;
+    color: #000;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    }
+    
+    footer img {padding: 0 0.1875rem;
+    width: 30px;
+    height: 30px;}
+    
+    .copy {font-size: 1rem;
+    }
+    
+    .botão-topo {padding: 1rem;}
+    
