@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+.all {
+    background-color: #000;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "section1" "infosfilme1"
+      "section2" "infosfilme2"
+      "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 11vh 20vh 105vh 4vh;
+}
+
+#header {grid-area: header;
+    background-color: #940E0E;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+    }
+    
+    .logo {transform: translatey(-0.1rem);
+      width: 100px;
+      height: 100px;
+    }
+    
+    .lupa {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+    .lupa input {margin: 0.625rem;
+    padding: 0.925rem 1.5rem;
+    border-radius: 1.25rem;
+    border: 0.1rem;
+    flex-wrap: wrap;
+    }
+    
+    .nav-item {border: 0.125rem solid;
+      padding: 0.3rem;
+      border-radius: 1rem;
+      font-size: 1.75rem;
+      background-color: #fff;
+        
+    }
+    
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+#titulo{
+    font-size: 30px;
+}
+
+.circulo{
+    border: #fff 1px solid;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #040404;
+    color: #fff;
+}
+
+.titulofilme{
+    display: flex;
+}
