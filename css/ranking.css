@@ -85,19 +85,15 @@ body {
     display: inline-block;
 }
 
-#infosfilme1{
-    grid-area: infosfilme1;
-}
-
-#avaliacao1{
+section#avaliacao1{
     grid-area: avaliacao1;
 }
 
-#poster1{
+section#poster1{
     grid-area: poster1;
 }
 
-#infosfilme1{
+section#infosfilme1{
     grid-area: infosfilme1;
 }
 
