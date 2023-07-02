@@ -26,7 +26,7 @@ main h2 {
     "filmes filmes filmes"
     "footer footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 12vh 440vh 6vh;
+  grid-template-rows: 14vh 440vh 6vh;
 }
 
 #header {
@@ -46,7 +46,9 @@ main {
   transform: translatey(-0.1rem);
   width: 100px;
   height: 100px;
+  margin-top: 10px;
 }
+
 
 .lupa {
   display: flex;
@@ -64,7 +66,7 @@ main {
 
 .nav-item {
   border: 0.125rem solid;
-  padding: 0.3rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 1rem;
   font-size: 1.75rem;
   background-color: #fff;
