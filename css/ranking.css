@@ -4,15 +4,19 @@
     background-color: #000;
     display: grid;
     grid-template-areas: 
-      "header"
-      "section1" "infosfilme1"
-      "section2" "infosfilme2"
-      "footer";
+      "header" "header" "header"
+      "titulo" "titulo" "titulo"
+      "avaliacao1" "avaliacao1" "avaliacao1"
+      "poster1" "infosfilme1" "notafilme1"
+      "avaliacao2" "avaliacao2" "avaliacao2"
+      "poster2" "infosfilme2" "notafilme2"
+      "footer" "footer" "footer";
       grid-template-columns: 100%;
       grid-template-rows: 11vh 20vh 105vh 4vh;
 }
 
-#header {grid-area: header;
+#header {
+    grid-area: header;
     background-color: #940E0E;
     display: flex;
     align-items: center;
@@ -61,7 +65,7 @@
     border-radius: 50px;
     width: 30px;
     height: 30px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -72,5 +76,31 @@ body {
 }
 
 .titulofilme{
-    display: flex;
+    display: inline-flex;
+    font-size: 25px;
+}
+
+
+.primeiro{
+    display: inline-block;
+}
+
+#infosfilme1{
+    grid-area: infosfilme1;
+}
+
+#avaliacao1{
+    grid-area: avaliacao1;
+}
+
+#poster1{
+    grid-area: poster1;
+}
+
+#infosfilme1{
+    grid-area: infosfilme1;
+}
+
+#notafilme1{
+    grid-area: notafilme1;
 }
