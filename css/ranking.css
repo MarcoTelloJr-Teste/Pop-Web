@@ -11,8 +11,12 @@
       "avaliacao2" "avaliacao2" "avaliacao2"
       "poster2" "infosfilme2" "notafilme2"
       "footer" "footer" "footer";
-      grid-template-columns: 100%;
-      grid-template-rows: 11vh 20vh 105vh 4vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+}
+
+.borda{
+    border: #fff 5px solid;
 }
 
 #header {
@@ -80,23 +84,27 @@ body {
     font-size: 25px;
 }
 
-
 .primeiro{
     display: inline-block;
 }
 
-section#avaliacao1{
+#avaliacao1{
     grid-area: avaliacao1;
 }
 
-section#poster1{
+#poster1{
     grid-area: poster1;
 }
 
-section#infosfilme1{
+#infosfilme1{
     grid-area: infosfilme1;
+    display: inline-block;
+    margin: 20px;
 }
 
 #notafilme1{
     grid-area: notafilme1;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
 }
