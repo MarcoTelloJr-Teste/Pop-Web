@@ -15,12 +15,11 @@ body {
   display: grid;
   grid-template-areas:
     "header"
-    "filme"
-    "sinopse"
-    "critica"
+    "sobre"
+    "pessoas"
     "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 14vh 40vh 40vh 20vh 4vh;
+  grid-template-rows: 14vh 40vh 10vh 4vh;
 }
 
 
@@ -68,40 +67,28 @@ body {
   color: #000;
 }
 
-.filme {grid-area: filme;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.genero {
-  display: flex;
-}
-
-.border {
-  margin: 10px;
-  padding: 5px 10px;
-  background-color: #292929;
-  border-radius: 30px;
-}
-
-h2 {
-  font-size: 2rem;
-  padding: 0.625rem;
-}
-
-.sinopse {grid-area: sinopse;
+.sobre {
+  grid-area: sobre;
   padding: 10px;
 }
-.critica  {grid-area: critica;
+
+
+
+.pessoas {grid-area: pessoas;
+  display: flex;
   padding: 10px;
+  align-items: center;
+}
+
+.pessoas h3 {
+  padding: 10px;
+}
+
+.pessoas p {
+transform: translate(-125px, 30px);
 }
 
 #footer {
@@ -132,3 +119,4 @@ footer img {
 .botão-topo {
   padding: 1rem;
 }
+
