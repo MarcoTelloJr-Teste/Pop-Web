@@ -2,7 +2,7 @@ function searchMovie() {
   const apiKey = '75c54705'; // Substitua pelo seu API key da OMDB
 
   const searchInput = document.getElementById('searchInput').value;
-  const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&t=${searchInput}`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${searchInput}`;
 
   fetch(apiUrl)
     .then(response => response.json())
