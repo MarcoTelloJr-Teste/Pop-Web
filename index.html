@@ -22,13 +22,13 @@
       <div class="nav-item"><a href="Sobre.html" class="nav-link">Sobre nós</a></div>
       
       <div class="lupa">
-        <p> 
-          <img src="assets/lupa.png" alt="lupa" sizes="(min-width: 7.5rem) 30rem, 30rem" loading="lazy"  width="35" height="35">
-        </p>
-        <p>
-          <input type="text" class="search-txt" placeholder="Pesquisar">
-       </p>
-      </div>
+        <input type="text" id="searchInput" placeholder="Nome do filme em inglês">
+        <button onclick="searchMovie()">Pesquisar</button>
+        <div id="movieInfo"></div>
+        <div id="floatingWindow">
+          <button id="closeButton" onclick="closeFloatingWindow()">x</button>
+          <div id="content"></div>
+        </div>
     </header>
 
     <main>
@@ -82,4 +82,5 @@
     </footer>
   </div>
 </body>
+<script src="Js/api.js"></script>
 </html>
