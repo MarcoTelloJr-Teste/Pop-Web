@@ -33,6 +33,42 @@ body {
 
 }
 
+#floatingWindow {
+  color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(160%, -59%);
+  padding: 20px;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+
+}
+
+#closeButton {
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #940E0E;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.btt {
+  padding: 0;
+  margin: 0;
+  background-color: #940E0E;
+  border: none;
+  cursor: pointer;
+
+}
+
 .logo {
   transform: translatey(-0.1rem);
   width: 100px;
@@ -68,7 +104,8 @@ body {
   color: #000;
 }
 
-.filme {grid-area: filme;
+.filme {
+  grid-area: filme;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -97,10 +134,13 @@ h2 {
   padding: 0.625rem;
 }
 
-.sinopse {grid-area: sinopse;
+.sinopse {
+  grid-area: sinopse;
   padding: 10px;
 }
-.critica  {grid-area: critica;
+
+.critica {
+  grid-area: critica;
   padding: 10px;
 }
 

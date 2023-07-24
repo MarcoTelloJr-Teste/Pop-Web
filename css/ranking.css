@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
@@ -8,19 +9,19 @@
 .all {
     background-color: #000;
     display: grid;
-    grid-template-areas: 
-      "header" "header" "header"
-      "titulo" "titulo" "titulo"
-      "avaliacao1" "avaliacao1" "avaliacao1"
-      "poster1" "infosfilme1" "notafilme1"
-      "avaliacao2" "avaliacao2" "avaliacao2"
-      "poster2" "infosfilme2" "notafilme2"
-      "footer" "footer" "footer";
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
+    grid-template-areas:
+        "header" "header" "header"
+        "titulo" "titulo" "titulo"
+        "avaliacao1" "avaliacao1" "avaliacao1"
+        "poster1" "infosfilme1" "notafilme1"
+        "avaliacao2" "avaliacao2" "avaliacao2"
+        "poster2" "infosfilme2" "notafilme2"
+        "footer" "footer" "footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
-.borda{
+.borda {
     border: #fff 0px solid;
 }
 
@@ -29,47 +30,86 @@
     background-color: #940E0E;
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    
-    }
-    
-    .logo {transform: translatey(-0.1rem);
-      width: 100px;
-      height: 100px;
-    }
-    
-    .lupa {
+    justify-content: space-around;
+
+}
+
+#floatingWindow {
+    color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(160%, -59%);
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+
+}
+
+#closeButton {
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #940E0E;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.btt {
+    padding: 0;
+    margin: 0;
+    background-color: #940E0E;
+    border: none;
+    cursor: pointer;
+
+}
+
+.logo {
+    transform: translatey(-0.1rem);
+    width: 100px;
+    height: 100px;
+}
+
+.lupa {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    }
-    
-    .lupa input {margin: 0.625rem;
+}
+
+.lupa input {
+    margin: 0.625rem;
     padding: 0.925rem 1.5rem;
     border-radius: 1.25rem;
     border: 0.1rem;
     flex-wrap: wrap;
-    }
-    
-    .nav-item {border: 0.125rem solid;
-      padding: 0.3rem;
-      border-radius: 1rem;
-      font-size: 1.75rem;
-      background-color: #fff;
-        
-    }
-    
+}
+
+.nav-item {
+    border: 0.125rem solid;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-size: 1.75rem;
+    background-color: #fff;
+
+}
+
 .nav-item a {
     text-decoration: none;
     color: #000;
 }
 
 
-#titulo{
+#titulo {
     font-size: 30px;
 }
 
-.circulo{
+.circulo {
     border: #fff 1px solid;
     border-radius: 50px;
     width: 30px;
@@ -85,26 +125,26 @@ body {
     color: #fff;
 }
 
-.titulofilme{
+.titulofilme {
     display: inline-flex;
     font-size: 25px;
     margin: 10px;
 }
 
-.primeiro{
+.primeiro {
     display: inline-block;
 }
 
-#avaliacao1{
+#avaliacao1 {
     grid-area: avaliacao1;
     margin: 10px;
 }
 
-#poster1{
+#poster1 {
     grid-area: poster1;
 }
 
-#infosfilme1{
+#infosfilme1 {
     grid-area: infosfilme1;
     display: inline-block;
     margin-right: 20px;
@@ -112,24 +152,24 @@ body {
     width: 200px;
 }
 
-#notafilme1{
+#notafilme1 {
     grid-area: notafilme1;
     display: inline-block;
     width: 300px;
     height: 50px;
 }
 
-#avaliacao2{
+#avaliacao2 {
     grid-area: avaliacao2;
     margin: 10px;
 }
 
-#poster2{
+#poster2 {
     grid-area: poster2;
     margin: 10px;
 }
 
-#infosfilme2{
+#infosfilme2 {
     grid-area: infosfilme2;
     display: inline-block;
     margin-right: 20px;
@@ -137,7 +177,7 @@ body {
     width: 200px;
 }
 
-#notafilme2{
+#notafilme2 {
     grid-area: notafilme2;
     display: inline-block;
     width: 300px;
@@ -156,43 +196,48 @@ body {
     bottom: 0;
     width: 100%;
     height: auto;
-    }
-    
-    footer img {padding: 0 0.1875rem;
+}
+
+footer img {
+    padding: 0 0.1875rem;
     width: 30px;
-    height: 30px;}
-    
-    .copy {font-size: 1rem;
-    }
-    
-    .botão-topo {padding: 1rem;}
-    
-    .linha{
-        display: flex;
-        align-self: start;
-        margin-bottom: 50px; 
-    }
+    height: 30px;
+}
 
-    .nomes{
-        font-size: 12px;
-        font-style:italic;
-        font-family: 'Times New Roman', Times, serif;
-    }
+.copy {
+    font-size: 1rem;
+}
 
-    h3{
-        font-size: 18px;
-        font-style:normal;
-        font-family: 'Times New Roman', Times, serif;
-    }
+.botão-topo {
+    padding: 1rem;
+}
 
-    
-    #comentario{
-        border: #fff 1px solid;
-        border-radius: 5px;
-        padding: 9px; 
-        background-color: gray;
-    }
+.linha {
+    display: flex;
+    align-self: start;
+    margin-bottom: 50px;
+}
 
-    #data{
-        font-size: 10px;
-    }
+.nomes {
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#comentario {
+    border: #fff 1px solid;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: gray;
+}
+
+#data {
+    font-size: 10px;
+}

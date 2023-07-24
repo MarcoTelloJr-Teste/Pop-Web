@@ -32,6 +32,42 @@ body {
 
 }
 
+#floatingWindow {
+  color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(160%, -59%);
+  padding: 20px;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+
+}
+
+#closeButton {
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #940E0E;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.btt {
+  padding: 0;
+  margin: 0;
+  background-color: #940E0E;
+  border: none;
+  cursor: pointer;
+
+}
+
 .logo {
   transform: translatey(-0.1rem);
   width: 100px;
@@ -77,7 +113,8 @@ body {
 
 
 
-.pessoas {grid-area: pessoas;
+.pessoas {
+  grid-area: pessoas;
   display: flex;
   padding: 10px;
   align-items: center;
@@ -88,7 +125,7 @@ body {
 }
 
 .pessoas p {
-transform: translate(-125px, 30px);
+  transform: translate(-125px, 30px);
 }
 
 #footer {
@@ -119,4 +156,3 @@ footer img {
 .botão-topo {
   padding: 1rem;
 }
-

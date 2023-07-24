@@ -14,7 +14,8 @@
   <div class="all">
     <header id="header">
       <div class="logo">
-        <a href="index.html" class="nav-link"><img src="assets/Logo.png" alt="Logo popweb" class="Logopop" title="Pop Web" width="150" height="auto"></a>
+        <a href="index.html" class="nav-link"><img src="assets/Logo.png" alt="Logo popweb" class="Logopop"
+            title="Pop Web" width="150" height="auto"></a>
       </div>
 
       <div class="nav-item"><a href="Emcartaz.html" class="nav-link">Em Cartaz</a></div>
@@ -22,14 +23,15 @@
       <div class="nav-item"><a href="Sobre.html" class="nav-link">Sobre nós</a></div>
 
       <div class="lupa">
-        <p>
-          <img src="assets/lupa.png" alt="lupa" sizes="(min-width: 7.5rem) 30rem, 30rem" loading="lazy" width="35"
-            height="35">
-        </p>
-        <p>
-          <input type="text" class="search-txt" placeholder="Pesquisar">
-        </p>
-      </div>
+        <button onclick="searchMovie()" class="btt"><img src="assets/lupa.png" alt="lupa"
+            sizes="(min-width: 7.5rem) 30rem, 30rem" loading="lazy" width="35" height="35"></button>
+        <input type="text" id="searchInput" placeholder="Título original do filme">
+
+        <div id="movieInfo"></div>
+        <div id="floatingWindow">
+          <button id="closeButton" onclick="closeFloatingWindow()">x</button>
+          <div id="content"></div>
+        </div>
     </header>
 
     <main>
@@ -296,5 +298,6 @@
     </footer>
   </div>
 </body>
+<script src="Js/api.js"></script>
 
 </html>

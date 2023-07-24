@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,57 +13,82 @@
 <body>
   <div id="all">
 
-  <header id="header">
-    <div class="logo">
-     <a href="index.html" class="nav-link"><img src="assets/Logo.png" alt="Logo popweb" class="Logopop" title="Pop Web"></a>
-    </div>
-    
-    <div class="nav-item"><a href="Emcartaz.html" class="nav-link">Em Cartaz</a></div>
-    <div class="nav-item"><a href="ranking.html" class="nav-link">Ranking</a></div>
-    <div class="nav-item"><a href="Sobre.html" class="nav-link">Sobre nós</a></div>
-    
-    <div class="lupa">
-      <p> 
-        <img src="assets/lupa.png" alt="lupa" sizes="(min-width: 7.5rem) 30rem, 30rem" loading="lazy"  width="35" height="35">
-      </p>
-      <p>
-        <input type="text" class="search-txt" placeholder="Pesquisar">
-     </p>
-    </div>
-  </header>
+    <header id="header">
+      <div class="logo">
+        <a href="index.html" class="nav-link"><img src="assets/Logo.png" alt="Logo popweb" class="Logopop"
+            title="Pop Web"></a>
+      </div>
 
-  
-<main>
-        <section id="section1">
-            <div id="titulo" class="borda"><h1>RANKING POP WEB</h1></div>
-            
-            <div id="avaliacao1" class="borda">
-            <div class="circulo">1</div>
-            <div class="titulofilme">Velozes e Furiosos 10</div>
-            </div>
-            
-            <div class="linha">
-            <span id="poster1" class="borda">
+      <div class="nav-item"><a href="Emcartaz.html" class="nav-link">Em Cartaz</a></div>
+      <div class="nav-item"><a href="ranking.html" class="nav-link">Ranking</a></div>
+      <div class="nav-item"><a href="Sobre.html" class="nav-link">Sobre nós</a></div>
+
+      <div class="lupa">
+        <button onclick="searchMovie()" class="btt"><img src="assets/lupa.png" alt="lupa"
+            sizes="(min-width: 7.5rem) 30rem, 30rem" loading="lazy" width="35" height="35"></button>
+        <input type="text" id="searchInput" placeholder="Título original do filme">
+
+        <div id="movieInfo"></div>
+        <div id="floatingWindow">
+          <button id="closeButton" onclick="closeFloatingWindow()">x</button>
+          <div id="content"></div>
+        </div>
+    </header>
+
+
+    <main>
+      <section id="section1">
+        <div id="titulo" class="borda">
+          <h1>RANKING POP WEB</h1>
+        </div>
+
+        <div id="avaliacao1" class="borda">
+          <div class="circulo">1</div>
+          <div class="titulofilme">Velozes e Furiosos 10</div>
+        </div>
+
+        <div class="linha">
+          <span id="poster1" class="borda">
             <img src="assets/Velozes2.png" alt="Velozes e Furiosos 10 Poster " width="282" height="404">
-            </span>
-            
-            <div id="infosfilme1" class="borda">
-            <span><h3>Direção</h3></span>
-            <span><h4 class="nomes">Vin Diesel</h4></span>
-            
-            <span><h3>Roteiro</h3></span>
-            <span><h4 class="nomes">Justin Lin,</h4></span>
-            <span><h4>Don Mazeau</h4></span>
-            
-            <span><h3>Título Original</h3></span>
-            <span><h4 class="nomes">Fast X</h4></span>
-            </div>
+          </span>
 
-            <span id="notafilme1" class="borda">
-            <span><h3>Nota Geral</h3></span>
-            <span><h4>8,7</h4></span>
+          <div id="infosfilme1" class="borda">
+            <span>
+              <h3>Direção</h3>
+            </span>
+            <span>
+              <h4 class="nomes">Vin Diesel</h4>
+            </span>
+
+            <span>
+              <h3>Roteiro</h3>
+            </span>
+            <span>
+              <h4 class="nomes">Justin Lin,</h4>
+            </span>
+            <span>
+              <h4>Don Mazeau</h4>
+            </span>
+
+            <span>
+              <h3>Título Original</h3>
+            </span>
+            <span>
+              <h4 class="nomes">Fast X</h4>
+            </span>
+          </div>
+
+          <span id="notafilme1" class="borda">
+            <span>
+              <h3>Nota Geral</h3>
+            </span>
+            <span>
+              <h4>8,7</h4>
+            </span>
             <img src="assets/Medalha.png" alt="Medalha" width="30">
-            <span><h3>Comentário em destaque</h3></span>
+            <span>
+              <h3>Comentário em destaque</h3>
+            </span>
             <img src="assets/PerfilFeminino.png" alt="AnonimoFeminino" width="30">
             <br>
             <span>Anônimo</span>
@@ -73,42 +99,63 @@
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
-            <span><h5 id="comentario">As irredeemably silly as it is satisfyingly self-aware, Fast X should rev the engines of longtime fans while leaving many newcomers in neutral.</h5></span>
+            <span>
+              <h5 id="comentario">As irredeemably silly as it is satisfyingly self-aware, Fast X should rev the engines
+                of longtime fans while leaving many newcomers in neutral.</h5>
             </span>
-          </div>
+          </span>
+        </div>
 
-        </section>
+      </section>
 
-        <hr>
+      <hr>
 
-        <section>
+      <section>
 
-          <div id="avaliacao2" class="borda">
-            <div class="circulo">2</div>
-            <div class="titulofilme">A Pequena Sereia</div>
-            </div>
+        <div id="avaliacao2" class="borda">
+          <div class="circulo">2</div>
+          <div class="titulofilme">A Pequena Sereia</div>
+        </div>
 
-            <div class="linha">
-            <span id="poster2" class="borda">
+        <div class="linha">
+          <span id="poster2" class="borda">
             <img src="assets/APequenaSereiaPoster.jpg" alt="A Pequena Sereira Poster" width="282" height="404">
+          </span>
+
+          <span id="infosfilme2" class="borda">
+            <span>
+              <h3>Direção</h3>
             </span>
-            
-            <span id="infosfilme2" class="borda">
-            <span><h3>Direção</h3></span>
-            <span><h4 class="nomes">Rob Marshall</h4></span>
-            
-            <span><h3>Roteiro</h3></span>
-            <span><h4 class="nomes">David Magee</h4></span>
-            
-            <span><h3>Título Original</h3></span>
-            <span><h4 class="nomes">The Little Mermaid</h4></span>
+            <span>
+              <h4 class="nomes">Rob Marshall</h4>
             </span>
 
-            <span id="notafilme2" class="borda">
-            <span><h3>Nota Geral</h3></span>
-            <span><h4>7,4</h4></span>
-    
-            <span><h3>Comentário em destaque</h3></span>
+            <span>
+              <h3>Roteiro</h3>
+            </span>
+            <span>
+              <h4 class="nomes">David Magee</h4>
+            </span>
+
+            <span>
+              <h3>Título Original</h3>
+            </span>
+            <span>
+              <h4 class="nomes">The Little Mermaid</h4>
+            </span>
+          </span>
+
+          <span id="notafilme2" class="borda">
+            <span>
+              <h3>Nota Geral</h3>
+            </span>
+            <span>
+              <h4>7,4</h4>
+            </span>
+
+            <span>
+              <h3>Comentário em destaque</h3>
+            </span>
             <img src="assets/PerfilMasculino.png" alt="Perfil Masculino" width="30">
             <br>
             <span>Jõao Carlos</span>
@@ -118,10 +165,13 @@
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
             <img src="assets/Estrela.png" alt="Estrela" width="15">
-            <span><h5 id="comentario">With Halle Bailey making a major splash in the title role, Disney's live-action Little Mermaid ranks among the studio's most enjoyable reimaginings.</h5></span>
+            <span>
+              <h5 id="comentario">With Halle Bailey making a major splash in the title role, Disney's live-action Little
+                Mermaid ranks among the studio's most enjoyable reimaginings.</h5>
             </span>
-          </div>
-            </section>
+          </span>
+        </div>
+      </section>
 
 
     </main>
@@ -134,13 +184,18 @@
       </div>
 
       <div class="copy">
-        <p>Copyright © 2023</p><p>Todos os direitos reservados.</p>
-     </div>
-  
-      <div class="botao-topo"> 
-        <buttom id="buttom-topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><img src="https://cdn-icons-png.flaticon.com/512/54/54817.png" sizes="(min-width: 7.5rem) 30rem, 20rem" loading="lazy"  width="40" height="40" alt="voltar ao topo" title="Voltar ao topo"> </buttom>
-     </div>  
+        <p>Copyright © 2023</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+
+      <div class="botao-topo">
+        <buttom id="buttom-topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><img
+            src="https://cdn-icons-png.flaticon.com/512/54/54817.png" sizes="(min-width: 7.5rem) 30rem, 20rem"
+            loading="lazy" width="40" height="40" alt="voltar ao topo" title="Voltar ao topo"> </buttom>
+      </div>
     </footer>
   </div>
-  </body>
-  </html>
+</body>
+<script src="Js/api.js"></script>
+
+</html>
