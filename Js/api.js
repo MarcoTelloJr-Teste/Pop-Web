@@ -1,3 +1,11 @@
+function handleKeyPress(event) {
+
+  if (event.key === "Enter") {
+
+    searchMovie();
+  }
+}
+
 function searchMovie() {
   const apiKey = '75c54705'; // Substitua pelo seu API key da OMDB
 
@@ -27,6 +35,8 @@ function searchMovie() {
       console.error('Erro ao buscar filme:', error);
     });
 }
+
+
 
 function closeFloatingWindow() {
   const floatingWindow = document.getElementById('floatingWindow');
